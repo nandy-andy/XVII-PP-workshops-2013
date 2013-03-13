@@ -20,7 +20,7 @@ Plan (in polish)
 		</ol>
 	</li>
 	<li>Front-end: złota zasada performance'u i pomysły/przykłądy jak zoptymalizować przykładową stronę -- @marcinpl87 (branch: frontend-part) (40 minut)</li>
-	<li>App: kontynuacja o performance, MVC&RESTful -- @nandy-andy (branch: backend-part) (50 minunt)
+	<li>App: kontynuacja o performance, MVC&RESTful -- @nandy-andy (branch: backend-part) (50 minunt - 75 minut z nice-to-have)
 		<ol>
 			<li>Instalacja LAMP/WAMP/XAMP (albo po prostu Apache, Mysql, PHP na swoim systemie) (10 minut)</li>
 			<li>Mini-framework Silex do zaserwowania strony (10 min)</li>
