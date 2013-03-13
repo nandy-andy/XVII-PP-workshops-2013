@@ -1,5 +1,8 @@
 <?php
 class Blog {
+	/**
+	 * @var PDO
+	 */
 	private $pdo = null;
 	private $dbUser = 'root';
 	private $dbPass = 'malopolsk4sql';
@@ -113,6 +116,42 @@ class Blog {
 		}
 		
 		return $res;
+	}
+
+	public function addComment($postId, $name, $email, $website, $content) {
+		$status = new stdClass();
+		$status->success = false;
+		$status->errors = array();
+		$postId = intval($postId);
+		$isConnected = $this->connect();
+
+		if( !$isConnected ) {
+			$status->errors[] = 'No database connection';
+		} else {
+			$status->commentId = $this->addCommentToDb($postId, $name, $email, $website, $content, $status->errors);
+			$status->success = (intval($status->commentId) > 0) ? true : false;
+		}
+
+		return $status;
+	}
+	
+	protected function addCommentToDb($postId, $name, $email, $website, $content, &$errors) {
+		$sql = 'insert into ' . $this->comments_table . ' (post_id, name, email, website_url, content) values (?, ?, ?, ?, ?)';
+
+		try {
+			$stm = $this->pdo->prepare($sql);
+			$stm->bindParam(1, $postId, PDO::PARAM_INT);
+			$stm->bindParam(2, $name, PDO::PARAM_STR);
+			$stm->bindParam(3, $email, PDO::PARAM_STR);
+			$stm->bindParam(4, $website, PDO::PARAM_STR);
+			$stm->bindParam(5, $content, PDO::PARAM_STR);
+			$stm->execute();
+			
+			return $this->pdo->lastInsertId();
+		} catch(Exception $e) {
+			$errors = $e->getMessage();
+			return false;
+		}
 	}
 	
 	public function getCategories() {
