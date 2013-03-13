@@ -1170,19 +1170,24 @@ nav {
 /* FOOTER - COLS ------------------------------------------------------------*/
 
 #footer-cols{
-	display: block;
 	overflow: hidden;
 	color: #bbbaba;
 	line-height: 1.5em;
-	margin-top: 40px;
+	display: -webkit-flex;
+	padding: 0;
+	margin: 5px;
+}
+
+@media screen and (max-width: 400px) {
+	#footer-cols {
+		display: block;
+	}
 }
 
 #footer-cols li.col{
-	display: block;
-	width: 282px;
-	float: left;
-	margin-left: 30px;
-	margin-bottom: 30px;
+	list-style: none;
+	-webkit-flex: 1;
+	margin: 10px;
 }
 
 #footer-cols li.col>h6{
