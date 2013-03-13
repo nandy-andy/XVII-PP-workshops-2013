@@ -343,5 +343,12 @@
 <script type="text/javascript" src="js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
 <!-- ENDS Fancybox -->
 
+<script>
+	(function(){
+		if('ontouchstart' in window) {
+			document.documentElement.className += 'touch';
+		}
+	})();
+</script>
 <!-- ENDS JS -->
 </html>
