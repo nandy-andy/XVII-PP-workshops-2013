@@ -27,4 +27,8 @@ $app->get('/post/{id}', function($id) use ($app, $blog) {
 	));
 });
 
+$app->post('/post/{id}/comment', function($id) use ($app, $blog) {
+	die('Posted comment for post#' . $id);
+});
+
 $app->run();
