@@ -17,45 +17,52 @@
         <div id="posts">
 
             {% if( posts|length > 0 ) %}
-            <!-- post -->
-            <div class="post">
-                <h1><a href="single.html">Lorem ipsum dolor amet</a></h1>
-                <div class="n-comments">165</div>
-
-                <!-- shadow -->
-                <div class="thumb-shadow">
-
-                    <!-- post-thumb -->
-                    <div class="post-thumbnail">
-                        <!-- meta -->
-                        <ul class="meta">
-                            <li><strong>Posted on</strong> Dec 27th 2011 </li>
-                            <li><strong>By</strong> <a href="#">Ansimuz</a></li>
-                            <li> <strong>Posted in</strong>
-                                <div class="meta-tags">
-                                    <a href="#">Webdesign</a>
-                                    <a href="#">Code</a>
-                                    <a href="#">Photo</a>
-                                    <a href="#">Blue</a>
-                                    <a href="#">Computers</a>
-                                    <a href="#">Sites</a>
-                                </div>
-                            </li>
-                        </ul>
-                        <!-- ENDS meta -->
-                        <a href="single.html" class="cover"><img src="/assets/img/dummies/596x270.gif" alt="Feature image"></a>
+            
+                {% for post in posts %}
+                <!-- post -->
+                    <div class="post">
+                        <h1><a href="/post/{{ post.id }}">{{ post.title }}</a></h1>
+                        <div class="n-comments">{{ post.comments|length }}</div>
+                        
+                        <!-- shadow -->
+                        <div class="thumb-shadow">
+        
+                            <!-- post-thumb -->
+                            <div class="post-thumbnail">
+                                <!-- meta -->
+                                <ul class="meta">
+                                    <li><strong>Posted on</strong> {{ post.date }} </li>
+                                    <li><strong>By</strong> <a href="#">{{ post.author }}</a></li>
+                                    
+                                    {% if( post.tags|length ) %}
+                                    <li> <strong>Posted in</strong>
+                                        <div class="meta-tags">
+                                            <a href="#">Webdesign</a>
+                                            <a href="#">Code</a>
+                                            <a href="#">Photo</a>
+                                            <a href="#">Blue</a>
+                                            <a href="#">Computers</a>
+                                            <a href="#">Sites</a>
+                                        </div>
+                                    </li>
+                                    {% endif %}
+                                </ul>
+                                <!-- ENDS meta -->
+                                <a href="/post/{{ post.id }}" class="cover"><img src="/assets/img/dummies/596x270.gif" alt="Feature image"></a>
+                            </div>
+                            <!-- ENDS post-thumb -->
+        
+                            <div class="the-excerpt">
+                                {{ post.excerpt }}
+                            </div>
+                            <a href="/post/{{ post.id }}" class="read-more">+ Read more</a>
+        
+                        </div>
+                        <!-- ENDS shadow -->
                     </div>
-                    <!-- ENDS post-thumb -->
-
-                    <div class="the-excerpt">
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames, Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Pellentesque habitant morbi tristique senectus et netus et malesuada fames, Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque habitant morbi tristique senectus et netus et malesuada fames.Pellentesque habitant morbi tristique senectus et netus et malesuada fames, Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque habitant morbi tristique senectus et netus et malesuada fames.
-                    </div>
-                    <a href="single.html" class="read-more">+ Read more</a>
-
-                </div>
-                <!-- ENDS shadow -->
-            </div>
-            <!-- ENDS post -->
+                <!-- ENDS post -->
+                {% endfor %}
+            
             {% endif %}
 
         </div>

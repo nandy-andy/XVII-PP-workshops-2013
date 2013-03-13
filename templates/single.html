@@ -18,7 +18,7 @@
 				
 					<!-- post -->
 					<div class="post">
-						<h1><a href="single.html">Lorem ipsum dolor amet</a></h1>
+						<h1><a href="/post/{{ post.id }}">{{ post.title }}</a></h1>
 						
 						<!-- shadow -->
 						<div class="thumb-shadow">
@@ -29,103 +29,75 @@
 							</div>
 							<!-- ENDS post-thumb -->
 							<div>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-								<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames, Pellentesque habitant morbi tristique senectus et netus et malesuada fames Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
-	
+                                <p>{{ post.content }}</p>
 							</div>
 						</div>
 						<!-- ENDS shadow -->
-											
-						<!-- meta -->
-						<ul class="meta">
-							<li><strong>Posted on</strong> Dec 27th 2011 </li>
-							<li><strong>By</strong> <a href="#">Ansimuz</a></li> 
-							<li> <strong>Posted in</strong> 
-								<div class="meta-tags">
-									<a href="#">Webdesign</a>
-									<a href="#">Code</a>
-									<a href="#">Photo</a>
-									<a href="#">Blue</a>
-									<a href="#">Computers</a>
-									<a href="#">Sites</a>
-								</div>
-							</li>
-						</ul>
-						<!-- ENDS meta -->	
+
+                        <!-- meta -->
+                        <ul class="meta">
+                            <li><strong>Posted on</strong> {{ post.date }} </li>
+                            <li><strong>By</strong> <a href="#">{{ post.author }}</a></li>
+
+                            {% if( post.tags|length ) %}
+                            <li> <strong>Posted in</strong>
+                                <div class="meta-tags">
+                                    <a href="#">Webdesign</a>
+                                    <a href="#">Code</a>
+                                    <a href="#">Photo</a>
+                                    <a href="#">Blue</a>
+                                    <a href="#">Computers</a>
+                                    <a href="#">Sites</a>
+                                </div>
+                            </li>
+                            {% endif %}
+                        </ul>
 						
 					</div>
 					<!-- ENDS post -->
 					
+                    {% if( post.comments|length > 0 ) %}
 					<!-- Comments-Block -->
 					<div id="comments-block">
-						<div class="n-comments">165</div> <div class="n-comments-text">comments</div>
+						<div class="n-comments">{{ post.comments|length }}</div> <div class="n-comments-text">comments</div>
 		
 						<!-- comments list -->
 						<ul class="commentlist">
-							<li class="comment" id="comment-18">
-								<div id="div-comment-18" class="comment-body">
-									<div class="comment-author vcard">
-										<img alt='' src='/assets/img/dummies/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' />
-										<cite class="fn">admin</cite><span class="says"> says:</span>
-									</div>
-					
-									<div class="comment-meta commentmetadata">
-										<a href="#">February 9, 2011 at 6:28 pm</a>
-									</div>
-					
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
-					
-									<div class="reply">
-										<a class='comment-reply-link' href='/archives/196?replytocom=18#respond' onclick='return addComment.moveForm("div-comment-18", "18", "respond", "196")'>Reply</a>
-									</div>
-								</div>
-							</li>
-							<li class="comment" id="comment-18">
-								<div id="div-comment-18" class="comment-body">
-									<div class="comment-author vcard">
-										<img alt='' src='/assets/img/dummies/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' />
-										<cite class="fn">admin</cite><span class="says"> says:</span>
-									</div>
-					
-									<div class="comment-meta commentmetadata">
-										<a href="#">February 9, 2011 at 6:28 pm</a>
-									</div>
-					
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
-					
-									<div class="reply">
-										<a class='comment-reply-link' href='/archives/196?replytocom=18#respond' onclick='return addComment.moveForm("div-comment-18", "18", "respond", "196")'>Reply</a>
-									</div>
-								</div>
-							</li>
-							<li class="comment" id="comment-18">
-								<div id="div-comment-18" class="comment-body">
-									<div class="comment-author vcard">
-										<img alt='' src='/assets/img/dummies/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' />
-										<cite class="fn">admin</cite><span class="says"> says:</span>
-									</div>
-					
-									<div class="comment-meta commentmetadata">
-										<a href="#">February 9, 2011 at 6:28 pm</a>
-									</div>
-					
-									<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.</p>
-					
-									<div class="reply">
-										<a class='comment-reply-link' href='/archives/196?replytocom=18#respond' onclick='return addComment.moveForm("div-comment-18", "18", "respond", "196")'>Reply</a>
-									</div>
-								</div>
-							</li>
+                            {% for comment in post.comments  %}
+                                <li class="comment" id="comment-{{ comment.id }}">
+                                    <div id="div-comment-{{ comment.id }}" class="comment-body">
+                                        <div class="comment-author vcard">
+                                            <img alt='' src='/assets/img/dummies/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' />
+                                            <cite class="fn">
+                                                {% if( comment.website|length > 0 ) %}
+                                                <a href="{{ comment.website }}">
+                                                    {{ comment.name }}
+                                                </a>
+                                                {% else %}
+                                                    {{ comment.name }}
+                                                {% endif %}
+                                            </cite><span class="says"> says:</span>
+                                        </div>
+                        
+                                        <div class="comment-meta commentmetadata">
+                                            {{ comment.date }}
+                                        </div>
+                        
+                                        <p>{{ comment.content }}</p>
+                                    </div>
+                                </li>
+                            {% endfor %}
 						</ul>
 						<!-- ENDS comments list -->
-		
-			
+		                
+			            {% if( post.comments|length > 1000 ) %}
 						<!-- Navi -->
 						<div class="comments-pagination">
 						<a class='prev page-numbers' href='http://localhost:8888/archives/586/comment-page-1#comments'>&laquo; Previous</a>
 						<a class='page-numbers' href='http://localhost:8888/archives/586/comment-page-1#comments'>1</a>
 						<span class='page-numbers current'>2</span>	</div>
 						<!-- ENDS Navi -->
+                        {% endif %}
 		
 						<!-- comments form -->
 						<div id="respond">
@@ -154,10 +126,11 @@
 								<!-- ENDS form -->
 							</div>
 						</div>
-						<!-- ENDS comments form -->	
+						<!-- ENDS comments form -->
 					</div>
-					<!-- ENDS Comments-block -->		
-					
+					<!-- ENDS Comments-block -->
+					{% endif %}
+                    
 				</div>
 				<!-- ENDS Posts -->
 

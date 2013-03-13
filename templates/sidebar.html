@@ -6,10 +6,9 @@
     <li>
         <h6>Categories</h6>
         <ul>
-            <li class="cat-item"><a href="#" title="View all posts">Pellentesque habitant morbi</a></li>
-            <li class="cat-item"><a href="#" title="View all posts">Pellentesque habitant morbi</a></li>
-            <li class="cat-item"><a href="#" title="View all posts">Pellentesque habitant morbi</a></li>
-            <li class="cat-item"><a href="#" title="View all posts">Pellentesque habitant morbi</a></li>
+            {% for category in categories %}
+            <li class="cat-item"><a href="#" title="View all posts">{{ category.name }}</a></li>
+            {% endfor %}
         </ul>
     </li>
     {% endif %}
