@@ -203,27 +203,27 @@ td, th{
 
 
 .lists-check ul li{ 
-	list-style-image: url(../img/bullets/check.png);
+	list-style-image: url(/assets/img/bullets/check.png);
 	line-height: 1.5em;
 }
 	
 .lists-arrow ul{ 
-	list-style-image: url(../img/bullets/arrow.png); 
+	list-style-image: url(/assets/img/bullets/arrow.png); 
 	line-height: 1.5em;
 }
 
 .lists-plus ul{ 
-	list-style-image: url(../img/bullets/plus.png); 
+	list-style-image: url(/assets/img/bullets/plus.png); 
 	line-height: 1.5em;
 }
 
 .lists-star ul{ 
-	list-style-image: url(../img/bullets/star.png); 
+	list-style-image: url(/assets/img/bullets/star.png); 
 	line-height: 1.5em;
 }
 
 .lists-heart ul{ 
-	list-style-image: url(../img/bullets/heart.png); 
+	list-style-image: url(/assets/img/bullets/heart.png); 
 	line-height: 1.5em;
 }
 
@@ -277,191 +277,191 @@ td, th{
 .info-add{
 	color: #4F8A10;
 	background-color: #DFF2BF;
-	background-image: url('../img/knobs-icons/Knob Add.png');
+	background-image: url('/assets/img/knobs-icons/Knob Add.png');
 }
 
 .warning-box{
 	color: #9F6000;
 	background-color: #FEEFB3;
-	background-image: url('../img/knobs-icons/Knob Attention.png');
+	background-image: url('/assets/img/knobs-icons/Knob Attention.png');
 }
 
 .blue-box{
 	color: #00529B;
 	background-color: #BDE5F8;
-	background-image: url('../img/knobs-icons/Knob Blue.png');
+	background-image: url('/assets/img/knobs-icons/Knob Blue.png');
 }
 
 .error-box{
 	color: #D8000C;
 	background-color: #FFBABA;
-	background-image: url('../img/knobs-icons/Knob Cancel.png');
+	background-image: url('/assets/img/knobs-icons/Knob Cancel.png');
 }
 
 .download-box{
 	color: #4F8A10;
 	background-color: #DFF2BF;
-	background-image: url('../img/knobs-icons/Knob Download.png');
+	background-image: url('/assets/img/knobs-icons/Knob Download.png');
 }
 
 .favorite-box{
 	color: #9F6000;
 	background-color: #FEEFB3;
-	background-image: url('../img/knobs-icons/Knob Favorite.png');
+	background-image: url('/assets/img/knobs-icons/Knob Favorite.png');
 }
 
 .information-box{
 	color: #00529B;
 	background-color: #BDE5F8;
-	background-image: url('../img/knobs-icons/Knob Info.png');
+	background-image: url('/assets/img/knobs-icons/Knob Info.png');
 }
 
 .success-box{
 	color: #4F8A10;
 	background-color: #DFF2BF;
-	background-image: url('../img/knobs-icons/Knob Valid Green.png');
+	background-image: url('/assets/img/knobs-icons/Knob Valid Green.png');
 }
 
 .fastforward-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Fast Forward.png');
+	background-image: url('/assets/img/knobs-icons/Knob Fast Forward.png');
 }
 
 .rewind-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Fast Rewind.png');
+	background-image: url('/assets/img/knobs-icons/Knob Fast Rewind.png');
 }
 
 .right-box{
 	color: #4F8A10;
 	background-color: #DFF2BF;
-	background-image: url('../img/knobs-icons/Knob Forward.png');
+	background-image: url('/assets/img/knobs-icons/Knob Forward.png');
 }
 
 .graphite-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Graphite.png');
+	background-image: url('/assets/img/knobs-icons/Knob Graphite.png');
 }
 
 .green-box{
 	color: #4F8A10;
 	background-color: #DFF2BF;
-	background-image: url('../img/knobs-icons/Knob Green.png');
+	background-image: url('/assets/img/knobs-icons/Knob Green.png');
 }
 
 .gray-box{
 	color: #fff;
 	background-color: #999999;
-	background-image: url('../img/knobs-icons/Knob Grey.png');
+	background-image: url('/assets/img/knobs-icons/Knob Grey.png');
 }
 
 .help-box{
 	color: #fff;
 	background-color: #b47bc4;
-	background-image: url('../img/knobs-icons/Knob Help.png');
+	background-image: url('/assets/img/knobs-icons/Knob Help.png');
 }
 
 .left-box{
 	color: #4F8A10;
 	background-color: #DFF2BF;
-	background-image: url('../img/knobs-icons/Knob Left.png');
+	background-image: url('/assets/img/knobs-icons/Knob Left.png');
 }
 
 .loop-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Loop Off.png');
+	background-image: url('/assets/img/knobs-icons/Knob Loop Off.png');
 }
 
 .message-box{
 	color: #00529B;
 	background-color: #BDE5F8;
-	background-image: url('../img/knobs-icons/Knob Message.png');
+	background-image: url('/assets/img/knobs-icons/Knob Message.png');
 }
 
 .orange-box{
 	color: #9F6000;
 	background-color: #FEEFB3;
-	background-image: url('../img/knobs-icons/Knob Orange.png');
+	background-image: url('/assets/img/knobs-icons/Knob Orange.png');
 }
 
 .pause-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Pause.png');
+	background-image: url('/assets/img/knobs-icons/Knob Pause.png');
 }
 
 .play-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Play.png');
+	background-image: url('/assets/img/knobs-icons/Knob Play.png');
 }
 
 .record-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Record Off.png');
+	background-image: url('/assets/img/knobs-icons/Knob Record Off.png');
 }
 
 .red-box{
 	color: #D8000C;
 	background-color: #FFBABA;
-	background-image: url('../img/knobs-icons/Knob Red.png');
+	background-image: url('/assets/img/knobs-icons/Knob Red.png');
 }
 
 .refresh-box{
 	color: #4F8A10;
 	background-color: #DFF2BF;
-	background-image: url('../img/knobs-icons/Knob Refresh.png');
+	background-image: url('/assets/img/knobs-icons/Knob Refresh.png');
 }
 
 .remove-box{
 	color: #D8000C;
 	background-color: #FFBABA;
-	background-image: url('../img/knobs-icons/Knob Remove Red.png');
+	background-image: url('/assets/img/knobs-icons/Knob Remove Red.png');
 }
 
 .search-box{
 	color: #00529B;
 	background-color: #BDE5F8;
-	background-image: url('../img/knobs-icons/Knob Search.png');
+	background-image: url('/assets/img/knobs-icons/Knob Search.png');
 }
 
 .shuffle-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Shuffle Off.png');
+	background-image: url('/assets/img/knobs-icons/Knob Shuffle Off.png');
 }
 
 .smart-box{
 	color: #fff;
 	background-color: #b47bc4;
-	background-image: url('../img/knobs-icons/Knob Smart.png');
+	background-image: url('/assets/img/knobs-icons/Knob Smart.png');
 }
 
 .back-box{
 	color: #9F6000;
 	background-color: #FEEFB3;
-	background-image: url('../img/knobs-icons/Knob Snapback.png');
+	background-image: url('/assets/img/knobs-icons/Knob Snapback.png');
 }
 
 .forward-box{
 	color: #9F6000;
 	background-color: #FEEFB3;
-	background-image: url('../img/knobs-icons/Knob Snapforward.png');
+	background-image: url('/assets/img/knobs-icons/Knob Snapforward.png');
 }
 
 .stop-box{
 	color: #ffffff;
 	background-color: #57737f;
-	background-image: url('../img/knobs-icons/Knob Stop.png');
+	background-image: url('/assets/img/knobs-icons/Knob Stop.png');
 }
 
 .upload-box{
 	color: #00529B;
 	background-color: #BDE5F8;
-	background-image: url('../img/knobs-icons/Knob Upload.png');
+	background-image: url('/assets/img/knobs-icons/Knob Upload.png');
 }

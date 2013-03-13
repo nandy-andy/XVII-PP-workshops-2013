@@ -24,7 +24,7 @@
 body {
 	line-height: 1;
 	color: #696969;
-	background: #f1f1f1 url(../img/bg/patterns/obl-1x1.png);
+	background: #f1f1f1 url(/assets/img/bg/patterns/obl-1x1.png);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:  100%;
 }
@@ -101,7 +101,7 @@ body {
 #header #breadcrumbs a{
 	color: #bfbdbd;
 	text-decoration: none;
-	background: url(../img/breadcrumb-slash.png) no-repeat top right;
+	background: url(/assets/img/breadcrumb-slash.png) no-repeat top right;
 	padding-right: 14px;
 }
 
@@ -111,7 +111,7 @@ body {
 	overflow: hidden;
 	height: 90px;
 	margin-bottom: 30px;
-	background: #f2f1f1 url(../img/twitter-border.png) repeat-x bottom left;
+	background: #f2f1f1 url(/assets/img/twitter-border.png) repeat-x bottom left;
 }
 
 #page-title .title{
@@ -269,7 +269,7 @@ h6{ font-size: 20px; }
 	width: 25px;
 	height: 25px;
 	border: 0px;
-	background: url(../img/search-submit.png) no-repeat  transparent -3px 2px;
+	background: url(/assets/img/search-submit.png) no-repeat  transparent -3px 2px;
 }
 
 /* NAVIGATION --------------------------------------------------------*/
@@ -417,7 +417,7 @@ h6{ font-size: 20px; }
 	background: #f2f1f1;
 	height: 170px;
 	width: 100%;
-	background: #f2f1f1 url(../img/twitter-border.png) repeat-x;	
+	background: #f2f1f1 url(/assets/img/twitter-border.png) repeat-x;	
 	border-radius: 0px 0px 10px 10px;
 	-moz-border-radius: 0px 0px 10px 10px;
 	-webkit-border-radius: 0px 0px 10px 10px;
@@ -430,7 +430,7 @@ h6{ font-size: 20px; }
 	left: 30px;
 	width: 30px;
 	height: 35px;
-	background: transparent url(../img/prev-arrow.png) no-repeat top left;
+	background: transparent url(/assets/img/prev-arrow.png) no-repeat top left;
 }
 
 #twitter #next-tweet{
@@ -440,7 +440,7 @@ h6{ font-size: 20px; }
 	right: 30px;
 	width: 30px;
 	height: 35px;
-	background: transparent url(../img/next-arrow.png) no-repeat top right;
+	background: transparent url(/assets/img/next-arrow.png) no-repeat top right;
 }
 
 #twitter #tweets .tweet_list{
@@ -513,7 +513,7 @@ h6{ font-size: 20px; }
 }
 
 .project-shadow{
-	background: url(../img/shadow-project.png) no-repeat 0px 267px;
+	background: url(/assets/img/shadow-project.png) no-repeat 0px 267px;
 }
 
 #projects-list .project .project-thumbnail{
@@ -625,7 +625,7 @@ h6{ font-size: 20px; }
 	display: block;
 	float: left;
 	overflow: hidden;
-	background: url(../img/plus-sign.png) center center no-repeat;
+	background: url(/assets/img/plus-sign.png) center center no-repeat;
 	width: 204;
 	height: 148px;
 	margin-right: 30px;
@@ -695,7 +695,7 @@ h6{ font-size: 20px; }
 	display: block;
 	float: left;
 	overflow: hidden;
-	background: url(../img/plus-sign.png) center center no-repeat;
+	background: url(/assets/img/plus-sign.png) center center no-repeat;
 	width: 204px;
 	height: 148px;
 	margin-left: 30px;
@@ -767,7 +767,7 @@ h6{ font-size: 20px; }
 	color: #fff;
 	text-align: center;
 	line-height: 32px;
-	background: url(../img/balloon.png) no-repeat;
+	background: url(/assets/img/balloon.png) no-repeat;
 }
 
 
@@ -776,7 +776,7 @@ h6{ font-size: 20px; }
 }
 
 .post .thumb-shadow{
-	background: url(../img/shadow-blog.png) no-repeat 0px 270px;
+	background: url(/assets/img/shadow-blog.png) no-repeat 0px 270px;
 }
 
 #posts .post .post-thumbnail{
@@ -800,7 +800,7 @@ h6{ font-size: 20px; }
 
 #posts .post .the-excerpt{
 	padding-bottom: 30px;
-	background: url(../img/post-divider.png) center bottom no-repeat;
+	background: url(/assets/img/post-divider.png) center bottom no-repeat;
 }
 
 #posts .post .post-thumbnail .meta{
@@ -994,7 +994,7 @@ h6{ font-size: 20px; }
 .leave-comment{
 	margin-top: 20px;
 	padding-top:30px;
-	background: url(../img/post-divider-inverted.png) no-repeat;
+	background: url(/assets/img/post-divider-inverted.png) no-repeat;
 }
 
 .leave-comment h2{
@@ -1229,7 +1229,7 @@ h6{ font-size: 20px; }
 	line-height: 80px;
 	text-align: center;
 	color: #868686;
-	background: url(../img/bottom-shadow.png) repeat-x;
+	background: url(/assets/img/bottom-shadow.png) repeat-x;
 }
 
 #footer #bottom a{
@@ -1243,7 +1243,7 @@ h6{ font-size: 20px; }
 	top: 26px;
 	width: 33px;
 	height: 33px;
-	background: url(../img/to-top.png) no-repeat;
+	background: url(/assets/img/to-top.png) no-repeat;
 	cursor: pointer;
 }
 

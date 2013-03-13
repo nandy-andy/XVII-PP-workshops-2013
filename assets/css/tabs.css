@@ -90,7 +90,7 @@ ul.tabs li.current a {
 	width: 282px;
 	height: 315px;
 	margin: 0px 0px 30px 30px;
-	background: url(../img/shadow-1-3.png) no-repeat 0px 150px;
+	background: url(/assets/img/shadow-1-3.png) no-repeat 0px 150px;
 }
 
 #content .panes .blocks-thumbs li .header{
@@ -106,7 +106,7 @@ ul.tabs li.current a {
 	width: 282px;
 	height: 150px;
 	margin-bottom: 20px;
-	background: url(../img/plus-sign.png) no-repeat center center;
+	background: url(/assets/img/plus-sign.png) no-repeat center center;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -118,7 +118,7 @@ ul.tabs li.current a {
 
 .panes{
 	margin-top: 30px;
-	background: url(../img/front-divider.png) no-repeat top center;
+	background: url(/assets/img/front-divider.png) no-repeat top center;
 }
 
 .panes .plain-text{
