@@ -71,70 +71,72 @@ youtube_32.png
 
 /* Circular 32x32 px ------------------------------------------------------------*/
 
+.social a { background-image: url(../img/social-icons/circular/sprite.png); }
 
-.social .addthis{ background: url(../img/social-icons/circular/addthis_32.png); }
-.social .aim{ background: url(../img/social-icons/circular/aim_32.png); }
-.social .aim2{ background: url(../img/social-icons/circular/aim2_32.png); }
-.social .apple{ background: url(../img/social-icons/circular/apple_32.png); }
-.social .bebo{ background: url(../img/social-icons/circular/bebo_32.png); }
-.social .behance{ background: url(../img/social-icons/circular/behance_32.png); }
-.social .blogger{ background: url(../img/social-icons/circular/blogger_32.png); }
-.social .brightkite{ background: url(../img/social-icons/circular/brightkite_32.png); }
-.social .cargo{ background: url(../img/social-icons/circular/cargo_32.png); }
-.social .delicious{ background: url(../img/social-icons/circular/delicious_32.png); }
-.social .design-bump{ background: url(../img/social-icons/circular/design_bump_32.png); }
-.social .designfloat{ background: url(../img/social-icons/circular/designfloat_32.png); }
-.social .designmoo{ background: url(../img/social-icons/circular/designmoo_32.png); }
-.social .deviantart{ background: url(../img/social-icons/circular/deviantart_32.png); }
-.social .digg{ background: url(../img/social-icons/circular/digg_32.png); }
-.social .dopplr{ background: url(../img/social-icons/circular/dopplr_32.png); }
-.social .dribbble{ background: url(../img/social-icons/circular/dribbble_32.png); }
-.social .email{ background: url(../img/social-icons/circular/email_32.png); }
-.social .ember{ background: url(../img/social-icons/circular/ember_32.png); }
-.social .evernote{ background: url(../img/social-icons/circular/evernote_32.png); }
-.social .facebook{ background: url(../img/social-icons/circular/facebook_32.png); }
-.social .flickr{ background: url(../img/social-icons/circular/flickr_32.png); }
-.social .friendfeed{ background: url(../img/social-icons/circular/friendfeed_32.png); }
-.social .github{ background: url(../img/social-icons/circular/github_32.png); }
-.social .google{ background: url(../img/social-icons/circular/google_32.png); }
-.social .google-buzz{ background: url(../img/social-icons/circular/google_buzz_32.png); }
-.social .google-talk{ background: url(../img/social-icons/circular/google_talk_32.png); }
-.social .googlemaps{ background: url(../img/social-icons/circular/googlemaps_32.png); }
-.social .lastfm{ background: url(../img/social-icons/circular/lastfm_32.png); }
-.social .linkedin{ background: url(../img/social-icons/circular/linkedin_32.png); }
-.social .livejournal{ background: url(../img/social-icons/circular/livejournal_32.png); }
-.social .mixx{ background: url(../img/social-icons/circular/mixx_32.png); }
-.social .mobileme{ background: url(../img/social-icons/circular/mobileme_32.png); }
-.social .msn{ background: url(../img/social-icons/circular/msn_32.png); }
-.social .myspace{ background: url(../img/social-icons/circular/myspace_32.png); }
-.social .netvibes{ background: url(../img/social-icons/circular/netvibes_32.png); }
-.social .newsvine{ background: url(../img/social-icons/circular/newsvine_32.png); }
-.social .orkut{ background: url(../img/social-icons/circular/orkut_32.png); }
-.social .pandora{ background: url(../img/social-icons/circular/pandora_32.png); }
-.social .paypal{ background: url(../img/social-icons/circular/paypal_32.png); }
-.social .picasa{ background: url(../img/social-icons/circular/picasa_32.png); }
-.social .posterous{ background: url(../img/social-icons/circular/posterous_32.png); }
-.social .qik{ background: url(../img/social-icons/circular/qik_32.png); }
-.social .reddit{ background: url(../img/social-icons/circular/reddit_32.png); }
-.social .rss{ background: url(../img/social-icons/circular/rss_32.png); }
-.social .sharethis{ background: url(../img/social-icons/circular/sharethis_32.png); }
-.social .skype{ background: url(../img/social-icons/circular/skype_32.png); }
-.social .slashdot{ background: url(../img/social-icons/circular/slashdot_32.png); }
-.social .squidoo{ background: url(../img/social-icons/circular/squidoo_32.png); }
-.social .stumbleupon{ background: url(../img/social-icons/circular/stumbleupon_32.png); }
-.social .technorati{ background: url(../img/social-icons/circular/technorati_32.png); }
-.social .tumblr{ background: url(../img/social-icons/circular/tumblr_32.png); }
-.social .twitter{ background: url(../img/social-icons/circular/twitter_32.png); }
-.social .viddler{ background: url(../img/social-icons/circular/viddler_32.png); }
-.social .vimeo{ background: url(../img/social-icons/circular/vimeo_32.png); }
-.social .virb{ background: url(../img/social-icons/circular/virb_32.png); }
-.social .windows{ background: url(../img/social-icons/circular/windows_32.png); }
-.social .wordpress{ background: url(../img/social-icons/circular/wordpress_32.png); }
-.social .xing{ background: url(../img/social-icons/circular/xing_32.png); }
-.social .yahoo{ background: url(../img/social-icons/circular/yahoo_32.png); }
-.social .yahoo-buzz{ background: url(../img/social-icons/circular/yahoo_buzz_32.png); }
-.social .yelp{ background: url(../img/social-icons/circular/yelp_32.png); }
-.social .youtube{ background: url(../img/social-icons/circular/youtube_32.png); }
+.addthis{ background-position: 0 0; width: 32px; height: 32px; }
+.aim2{ background-position: 0 -82px; width: 32px; height: 32px; }
+.aim{ background-position: 0 -164px; width: 32px; height: 32px; }
+.apple{ background-position: 0 -246px; width: 32px; height: 32px; }
+.bebo{ background-position: 0 -328px; width: 32px; height: 32px; }
+.behance{ background-position: 0 -410px; width: 32px; height: 32px; }
+.blogger{ background-position: 0 -492px; width: 32px; height: 32px; }
+.brightkite{ background-position: 0 -574px; width: 32px; height: 32px; }
+.cargo{ background-position: 0 -656px; width: 32px; height: 32px; }
+.delicious{ background-position: 0 -738px; width: 32px; height: 32px; }
+.design_bump{ background-position: 0 -820px; width: 32px; height: 32px; }
+.designfloat{ background-position: 0 -902px; width: 32px; height: 32px; }
+.designmoo{ background-position: 0 -984px; width: 32px; height: 32px; }
+.deviantart{ background-position: 0 -1066px; width: 32px; height: 32px; }
+.digg{ background-position: 0 -1148px; width: 32px; height: 32px; }
+.dopplr{ background-position: 0 -1230px; width: 32px; height: 32px; }
+.dribbble{ background-position: 0 -1312px; width: 32px; height: 32px; }
+.email{ background-position: 0 -1394px; width: 32px; height: 32px; }
+.ember{ background-position: 0 -1476px; width: 32px; height: 32px; }
+.evernote{ background-position: 0 -1558px; width: 32px; height: 32px; }
+.facebook{ background-position: 0 -1640px; width: 32px; height: 32px; }
+.flickr{ background-position: 0 -1722px; width: 32px; height: 32px; }
+.friendfeed{ background-position: 0 -1804px; width: 32px; height: 32px; }
+.github{ background-position: 0 -1886px; width: 32px; height: 32px; }
+.google{ background-position: -82px 0; width: 32px; height: 32px; }
+.google_buzz{ background-position: -82px -82px; width: 32px; height: 32px; }
+.google_talk{ background-position: -82px -164px; width: 32px; height: 32px; }
+.googlemaps{ background-position: -82px -246px; width: 32px; height: 32px; }
+.lastfm{ background-position: -82px -328px; width: 32px; height: 32px; }
+.linkedin{ background-position: -82px -410px; width: 32px; height: 32px; }
+.livejournal{ background-position: -82px -492px; width: 32px; height: 32px; }
+.mixx{ background-position: -82px -574px; width: 32px; height: 32px; }
+.mobileme{ background-position: -82px -656px; width: 32px; height: 32px; }
+.msn{ background-position: -82px -738px; width: 32px; height: 32px; }
+.myspace{ background-position: -82px -820px; width: 32px; height: 32px; }
+.netvibes{ background-position: -82px -902px; width: 32px; height: 32px; }
+.newsvine{ background-position: -82px -984px; width: 32px; height: 32px; }
+.orkut{ background-position: -82px -1066px; width: 32px; height: 32px; }
+.pandora{ background-position: -82px -1148px; width: 32px; height: 32px; }
+.paypal{ background-position: -82px -1230px; width: 32px; height: 32px; }
+.picasa{ background-position: -82px -1312px; width: 32px; height: 32px; }
+.posterous{ background-position: -82px -1394px; width: 32px; height: 32px; }
+.qik{ background-position: -82px -1476px; width: 32px; height: 32px; }
+.reddit{ background-position: -82px -1558px; width: 32px; height: 32px; }
+.rss{ background-position: -82px -1640px; width: 32px; height: 32px; }
+.sharethis{ background-position: -82px -1722px; width: 32px; height: 32px; }
+.skype{ background-position: -82px -1804px; width: 32px; height: 32px; }
+.slashdot{ background-position: -82px -1886px; width: 32px; height: 32px; }
+.squidoo{ background-position: -164px 0; width: 32px; height: 32px; }
+.stumbleupon{ background-position: -164px -82px; width: 32px; height: 32px; }
+.technorati{ background-position: -164px -164px; width: 32px; height: 32px; }
+.tumblr{ background-position: -164px -246px; width: 32px; height: 32px; }
+.twitter{ background-position: -164px -328px; width: 32px; height: 32px; }
+.viddler{ background-position: -164px -410px; width: 32px; height: 32px; }
+.vimeo{ background-position: -164px -492px; width: 32px; height: 32px; }
+.virb{ background-position: -164px -574px; width: 32px; height: 32px; }
+.windows{ background-position: -164px -656px; width: 32px; height: 32px; }
+.wordpress{ background-position: -164px -738px; width: 32px; height: 32px; }
+.xing{ background-position: -164px -820px; width: 32px; height: 32px; }
+.yahoo{ background-position: -164px -902px; width: 32px; height: 32px; }
+.yahoo_buzz{ background-position: -164px -984px; width: 32px; height: 32px; }
+.yelp{ background-position: -164px -1066px; width: 32px; height: 32px; }
+.youtube{ background-position: -164px -1148px; width: 32px; height: 32px; }
+
 
 
 
