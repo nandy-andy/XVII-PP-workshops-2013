@@ -7,11 +7,21 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 $app->get('/', function() use ($app) {
-    return $app['twig']->render('blog.html');
+	return $app['twig']->render('blog.html', array(
+		'title' => 'Listing',
+		'posts' => array(),
+		'categories' => array(),
+		'archives' => array(),
+	));
 });
 
 $app->get('/post/{id}', function($id) use ($app) {
-	return $app['twig']->render('single.html');
+	return $app['twig']->render('single.html', array(
+		'title' => 'A post',
+		'post' => array(),
+		'categories' => array(),
+		'archives' => array(),
+	));
 });
 
 $app->run();
