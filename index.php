@@ -6,7 +6,6 @@ $app = new Silex\Application();
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
 	'twig.path' => __DIR__. '/templates',
 ));
-$app['debug'] = true;
 
 $blog = new Blog();
 $app->get('/', function() use ($app, $blog) {
@@ -27,8 +26,18 @@ $app->get('/post/{id}', function($id) use ($app, $blog) {
 	));
 });
 
-$app->post('/post/{id}/comment', function($id) use ($app, $blog) {
-	die('Posted comment for post#' . $id);
+$app->post('/post/{id}/comment', function(Symfony\Component\HttpFoundation\Request $request) use ($app, $blog) {
+	$id = $request->get('id');
+	$name = $request->get('author');
+	$email = $request->get('email');
+	$website = $request->get('url');
+	$comment = $request->get('comment');
+	
+	$status = $blog->addComment($id, $name, $email, $website, $comment);
+	$param = ($status == true) ? 'success' : 'fail';
+	$querystring = ($status == true) ? '#div-comment-' . $status->commentId : '';
+		
+	return $app->redirect('/post/' . $id . '?' . $param . $querystring);
 });
 
 $app->run();
