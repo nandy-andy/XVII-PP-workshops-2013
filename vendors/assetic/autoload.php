@@ -27,4 +27,4 @@ include_once(__DIR__ . '/Assetic/Asset/StringAsset.php');
 include_once(__DIR__ . '/Assetic/Factory/AssetFactory.php');
 include_once(__DIR__ . '/Assetic/Factory/Worker/WorkerInterface.php');
 
-include_once(__DIR__ . '/assetic/functions.php');
+include_once(__DIR__ . '/functions.php');
