@@ -204,7 +204,6 @@ h6{ font-size: 20px; }
 /* SOCIAL --------------------------------------------------------*/
 
 #social-holder{
-	display: inline-block;
 	float: right;
 }
 
@@ -243,9 +242,6 @@ h6{ font-size: 20px; }
 	position: absolute;
 	right:  10px;
 	top: 15px;
-}
-
-#searchform {
 }
 
 #searchform #s{
