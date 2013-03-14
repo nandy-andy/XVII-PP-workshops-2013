@@ -38,7 +38,11 @@ body {
 #header{
 	height: 200px;
 	position: relative;
-	z-index: 10;
+	padding: 10px;
+}
+
+#header nav {
+	margin: 10px 0;
 }
 
 #main{
@@ -64,6 +68,7 @@ body {
 	position: absolute;
 	top: 40px;
 	left: 30px;
+	display: block;
 }
 
 #content a{
@@ -90,6 +95,7 @@ body {
 	font-style: italic;
 	color: #999;
 	font-size: 10px;
+	margin: 10px;
 }
 
 #header #breadcrumbs a{
@@ -124,7 +130,7 @@ body {
 	margin-left: 30px;
 	line-height: 90px;
 	color: #929191;
-	font-style: italic;	
+	font-style: italic;
 }
 
 /* HOME --------------------------------------------------------*/
@@ -151,14 +157,14 @@ body.home #content{
 
 #headline a{
 	text-decoration: none;
-	color: #FFD800; 
+	color: #FFD800;
 }
 
 /* HEADERS --------------------------------------------------------*/
 
-h1,h2,h3,h4,h5,h6{ 
+h1,h2,h3,h4,h5,h6{
 	line-height: 1.4em;
-	font-family: 'Ubuntu', arial, serif; 
+	font-family: 'Ubuntu', arial, serif;
 	font-weight: lighter;
 }
 
@@ -207,7 +213,8 @@ h6{ font-size: 20px; }
 #social-holder{
 	overflow: hidden;
 	width: 100%;
-	padding-top: 40px;	
+	padding-top: 40px;
+	margin: 5px 0;
 }
 
 .social{
@@ -257,7 +264,7 @@ h6{ font-size: 20px; }
 }
 
 #searchform #searchsubmit{
-	position: absolute; 
+	position: absolute;
 	top: 0px;
 	right: 0px;
 	width: 25px;
@@ -302,7 +309,7 @@ h6{ font-size: 20px; }
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	
+
 	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 }
 
@@ -371,7 +378,7 @@ h6{ font-size: 20px; }
 	margin-right: 5px;
 	margin-bottom: 10px;
 	padding: 3px 10px;
-	background: #363636;	
+	background: #363636;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -382,7 +389,7 @@ h6{ font-size: 20px; }
 }
 
 
-#content .filter li a{	
+#content .filter li a{
 	display: block;
 	color: #f1f1f1;
 	text-decoration: none;
@@ -391,7 +398,7 @@ h6{ font-size: 20px; }
 }
 
 #content .filter li:hover{
-	background: #000;	
+	background: #000;
 }
 
 #content .filter li:first-child:hover{
@@ -399,7 +406,7 @@ h6{ font-size: 20px; }
 }
 
 #content .filter li.active{
-	background: #999;	
+	background: #999;
 }
 
 
@@ -411,7 +418,7 @@ h6{ font-size: 20px; }
 	background: #f2f1f1;
 	height: 170px;
 	width: 100%;
-	background: #f2f1f1 url(../img/twitter-border.png) repeat-x;	
+	background: #f2f1f1 url(../img/twitter-border.png) repeat-x;
 	border-radius: 0px 0px 10px 10px;
 	-moz-border-radius: 0px 0px 10px 10px;
 	-webkit-border-radius: 0px 0px 10px 10px;
@@ -455,7 +462,7 @@ h6{ font-size: 20px; }
 	font-style: italic;
 	color: #838383;
 	text-align: center;
-	padding-top: 62px; 
+	padding-top: 62px;
 }
 
 #twitter #tweets .tweet_list li .tweet_time a{
@@ -550,13 +557,13 @@ h6{ font-size: 20px; }
 	color: #fff;
 	padding: 0px 30px 0px 30px;
 	opacity: 0;
-	
+
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	
-	-webkit-box-shadow: 0px 2px 3px #000; 
-	-moz-box-shadow: 0px 2px 3px #000; 
+
+	-webkit-box-shadow: 0px 2px 3px #000;
+	-moz-box-shadow: 0px 2px 3px #000;
 	box-shadow: 0px 2px 3px #000;
 }
 
@@ -815,7 +822,7 @@ h6{ font-size: 20px; }
 	border-color: #e7e6e6 #ececec #ececec #ececec;
 	border-width: 3px 1px 1px 1px;
 	border-style: solid;
-	
+
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -835,9 +842,9 @@ h6{ font-size: 20px; }
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-	
-	-webkit-box-shadow: 0px 2px 3px #000; 
-	-moz-box-shadow: 0px 2px 3px #000; 
+
+	-webkit-box-shadow: 0px 2px 3px #000;
+	-moz-box-shadow: 0px 2px 3px #000;
 	box-shadow: 0px 2px 3px #000;
 }
 
@@ -892,7 +899,7 @@ h6{ font-size: 20px; }
 	position: absolute;
 	top: 4px;
 	left:68px;
-	font-family: 'Ubuntu', arial, serif; 
+	font-family: 'Ubuntu', arial, serif;
 	font-size: 28px;
 }
 
@@ -956,7 +963,7 @@ h6{ font-size: 20px; }
 	line-height:13px;
 	margin-bottom: 10px;
 }
- 
+
 #content .comments-pagination span,
 #content .comments-pagination a {
 	display:block;
@@ -971,12 +978,12 @@ h6{ font-size: 20px; }
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 }
- 
+
 #content .comments-pagination a:hover{
 	color:#fff;
 	background: #000000;
 }
- 
+
 #content .comments-pagination .current{
 	padding:6px 9px 5px 9px;
 	background: #000000;
@@ -1118,7 +1125,7 @@ h6{ font-size: 20px; }
 #content .pager li:hover a,
 #content .pager li.active a{
 	color: #363636;
-	background: #ffd800;	
+	background: #ffd800;
 }
 
 /* SIDEBAR ------------------------------------------------------------*/
@@ -1240,12 +1247,3 @@ h6{ font-size: 20px; }
 	background: url(../img/to-top.png) no-repeat;
 	cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
