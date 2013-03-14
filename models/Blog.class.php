@@ -4,9 +4,9 @@ class Blog {
 	 * @var PDO
 	 */
 	private $pdo = null;
-	private $dbUser = 'pma';
-	private $dbPass = 'test123';
-	private $dbName = 'workshop_blog';
+	private $dbUser = 'username';
+	private $dbPass = 'password';
+	private $dbName = 'dbName';
 	private $dbHost = 'localhost';
 	private $comments_table = 'comments';
 
