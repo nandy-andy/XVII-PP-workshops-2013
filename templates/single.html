@@ -1,135 +1,138 @@
 {% include 'header.html' %}
 
 <!-- MAIN -->
-		<div id="main">
+<div id="main">
 			
-			<!-- content -->
-			<div id="content">
+<!-- content -->
+    <div id="content">
 
-                <!-- title -->
-                <div id="page-title">
-                    <span class="title">A Blog</span>
-                    <span class="subtitle">Just another blog on the Internet...</span>
-                </div>
-                <!-- ENDS title -->
+    <!-- title -->
+        <div id="page-title">
+            <span class="title">A Blog</span>
+            <span class="subtitle">Just another blog on the Internet...</span>
+        </div>
+    <!-- ENDS title -->
 				
-				<!-- Posts -->
-				<div id="posts" class="single">
-				
-					<!-- post -->
-					<div class="post">
-						<h1><a href="/post/{{ post.id }}">{{ post.title }}</a></h1>
-						
-						<!-- shadow -->
-						<div class="thumb-shadow">
-						
-							<!-- post-thumb -->
-							<div class="post-thumbnail">
-								<img src="/assets/img/dummies/596x270.gif"  alt="Feature image" />
-							</div>
-							<!-- ENDS post-thumb -->
-							<div>
-                                <p>{{ post.content }}</p>
-							</div>
-						</div>
-						<!-- ENDS shadow -->
-
-                        <!-- meta -->
-                        <ul class="meta">
-                            <li><strong>Posted on</strong> {{ post.date }} </li>
-                            <li><strong>By</strong> <a href="#">{{ post.author }}</a></li>
-
-                            {% if( post.tags|length ) %}
-                            <li> <strong>Posted in</strong>
-                                <div class="meta-tags">
-                                    <a href="#">Webdesign</a>
-                                    <a href="#">Code</a>
-                                    <a href="#">Photo</a>
-                                    <a href="#">Blue</a>
-                                    <a href="#">Computers</a>
-                                    <a href="#">Sites</a>
-                                </div>
-                            </li>
-                            {% endif %}
-                        </ul>
-						
-					</div>
-					<!-- ENDS post -->
+    <!-- Posts -->
+        <div id="posts" class="single">
+			
+        <!-- post -->
+        <div class="post">
+            <h1><a href="/post/{{ post.id }}">{{ post.title }}</a></h1>
 					
-                    {% if( post.comments|length > 0 ) %}
-					<!-- Comments-Block -->
-					<div id="comments-block">
-						<div class="n-comments">{{ post.comments|length }}</div> <div class="n-comments-text">comments</div>
-		
-						<!-- comments list -->
-						<ul class="commentlist">
-                            {% for comment in post.comments  %}
-                                <li class="comment" id="comment-{{ comment.id }}">
-                                    <div id="div-comment-{{ comment.id }}" class="comment-body">
-                                        <div class="comment-author vcard">
-                                            <img alt='' src='/assets/img/dummies/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' />
-                                            <cite class="fn">
-                                                {% if( comment.website|length > 0 ) %}
-                                                <a href="{{ comment.website }}">
-                                                    {{ comment.name }}
-                                                </a>
-                                                {% else %}
-                                                    {{ comment.name }}
-                                                {% endif %}
-                                            </cite><span class="says"> says:</span>
-                                        </div>
-                        
-                                        <div class="comment-meta commentmetadata">
-                                            {{ comment.date }}
-                                        </div>
-                        
-                                        <p>{{ comment.content }}</p>
-                                    </div>
-                                </li>
-                            {% endfor %}
-						</ul>
-						<!-- ENDS comments list -->
-		                
-			            {% if( post.comments|length > 1000 ) %}
-						<!-- Navi -->
-						<div class="comments-pagination">
-						<a class='prev page-numbers' href='http://localhost:8888/archives/586/comment-page-1#comments'>&laquo; Previous</a>
-						<a class='page-numbers' href='http://localhost:8888/archives/586/comment-page-1#comments'>1</a>
-						<span class='page-numbers current'>2</span>	</div>
-						<!-- ENDS Navi -->
-                        {% endif %}
-		
-						<!-- comments form -->
-						<div id="respond">
-							<div class="leave-comment">
-								<h2>Leave a Reply</h2>	
-								<!-- form -->
-								<form action="/post/{{ post.id }}/comment" method="post" id="commentform">
-									<fieldset>
-										<div><label >NAME </label>
-										<input type="text" name="author" id="author" value="" tabindex="1" /></div>
-										<div><label >EMAIL (Will not be published) </label>
-										<input type="text" name="email" id="email" value="" tabindex="2" /></div>
-										<div><label >WEBSITE</label><input type="text" name="url" id="url" value="" tabindex="3" /></div>
-										<div class="admin-form">
-											<div>
-												<label >COMMENTS</label>
-												<textarea  name="comment" id="comment" rows="10" tabindex="4"></textarea>
-											</div>
-											<div><input type="submit" name="submit" id="submit" tabindex="5" value="SEND" /></div>
-											<div><input type="hidden" name="comment_post_ID" value="586" /></div>
-										</div>
-										<input type='hidden' name='comment_post_ID' value='586' id='comment_post_ID' />
-										<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
-									</fieldset>
-								</form>
-								<!-- ENDS form -->
-							</div>
+            <!-- shadow -->
+            <div class="thumb-shadow">
+					
+            <!-- post-thumb -->
+                <div class="post-thumbnail">
+                    <img src="/assets/img/dummies/596x270.gif"  alt="Feature image" />
+                </div>
+            <!-- ENDS post-thumb -->
+                <div>
+                    <p>{{ post.content }}</p>
+                </div>
+            </div>
+            <!-- ENDS shadow -->
+
+            <!-- meta -->
+            <ul class="meta">
+                <li><strong>Posted on</strong> {{ post.date }} </li>
+                <li><strong>By</strong> <a href="#">{{ post.author }}</a></li>
+
+                {% if( post.tags|length ) %}
+                <li> <strong>Posted in</strong>
+                <div class="meta-tags">
+                    <a href="#">Webdesign</a>
+                    <a href="#">Code</a>
+                    <a href="#">Photo</a>
+                    <a href="#">Blue</a>
+                    <a href="#">Computers</a>
+                    <a href="#">Sites</a>
+                </div>
+                </li>
+                {% endif %}
+            </ul>			
+        </div>
+        <!-- ENDS post -->				
+            <div id="comments-block">
+            {% if( post.comments|length > 0 ) %}
+                <!-- Comments-Block -->
+                    <div class="n-comments">{{ post.comments|length }}</div>
+                    <div class="n-comments-text">comments</div>
+                    <!-- comments list -->
+                    <ul class="commentlist">
+                        {% for comment in post.comments  %}
+                        <li class="comment" id="comment-{{ comment.id }}">
+                        <div id="div-comment-{{ comment.id }}" class="comment-body">
+                            <div class="comment-author vcard">
+                                <img alt='' src='/assets/img/dummies/avatar.jpg' class='avatar avatar-60 photo' height='60' width='60' />
+                                <cite class="fn">
+                                {% if( comment.website|length > 0 ) %}
+                                    <a href="{{ comment.website }}">
+                                    {{ comment.name }}
+                                    </a>
+                                {% else %}
+                                    {{ comment.name }}
+                                {% endif %}
+                                </cite><span class="says"> says:</span>
+                            </div>
+                            <div class="comment-meta commentmetadata">
+                                {{ comment.date }}
+                            </div>
+                                <p>{{ comment.content }}</p>
+                        </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <!-- ENDS comments list -->            
+                    {% if( post.comments|length > 1000 ) %}
+                        <!-- Navi -->
+                        <div class="comments-pagination">
+                        <a class='prev page-numbers' href='http://localhost:8888/archives/586/comment-page-1#comments'>&laquo; Previous</a>
+                        <a class='page-numbers' href='http://localhost:8888/archives/586/comment-page-1#comments'>1</a>
+                        <span class='page-numbers current'>2</span>	</div>
+                        <!-- ENDS Navi -->
+                    {% endif %}
+            {% endif %}	
+            <!-- comments form -->
+            <div id="respond">
+                <div class="leave-comment">
+                    <h2>Leave a Reply</h2>	
+            <!-- form -->
+                    <form action="/post/{{ post.id }}/comment" method="post" id="commentform">
+                    <fieldset>
+                    <div><label >NAME </label>
+                        <input type="text" name="author" id="author" value="" tabindex="1" />
+                    </div>
+                    <div>
+                        <label >EMAIL (Will not be published) </label>
+                        <input type="text" name="email" id="email" value="" tabindex="2" />
+                    </div>
+                    <div>
+                        <label >WEBSITE</label><input type="text" name="url" id="url" value="" tabindex="3" />
+                    </div>
+                    <div class="admin-form">
+                        <div>
+                        <label >COMMENTS</label>
+                        <textarea  name="comment" id="comment" rows="10" tabindex="4"></textarea>
+                        </div>
+                        <div>
+                            <input type="submit" name="submit" id="submit" tabindex="5" value="SEND" />
+                        </div>
+                        <div>
+                            <input type="hidden" name="comment_post_ID" value="586" />
+                        </div>
+                    </div>
+                        <input type='hidden' name='comment_post_ID' value='586' id='comment_post_ID' />
+                        <input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+                    </fieldset>
+                </form>
+            <!-- ENDS form -->
+            </div>
 						</div>
 						<!-- ENDS comments form -->
 					</div>
 					<!-- ENDS Comments-block -->
-					{% endif %}
                     
 				</div>
 				<!-- ENDS Posts -->

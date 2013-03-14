@@ -4,10 +4,10 @@ class Blog {
 	 * @var PDO
 	 */
 	private $pdo = null;
-	private $dbUser = 'user';
-	private $dbPass = 'password';
-	private $dbName = 'dbname';
-	private $dbHost = '127.0.0.1';
+	private $dbUser = 'pma';
+	private $dbPass = 'test123';
+	private $dbName = 'workshop_blog';
+	private $dbHost = 'localhost';
 	private $comments_table = 'comments';
 
 	public function connect() {
