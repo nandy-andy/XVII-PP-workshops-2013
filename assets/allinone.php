@@ -40,7 +40,6 @@ if( isset($_GET['js']) ) {
 		new FileAsset($ROOT . '/assets/js/superfish-1.4.8/js/superfish.js'),
 		new FileAsset($ROOT . '/assets/js/superfish-1.4.8/js/supersubs.js'),
 		new FileAsset($ROOT . '/assets/js/poshytip-1.0/src/jquery.poshytip.min.js'),
-		new FileAsset($ROOT . '/assets/js/tweet/jquery.tweet.js'),
 		new FileAsset($ROOT . '/assets/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js'),
 	));
 

@@ -50,16 +50,7 @@ jQuery(document).ready(function($) {
 			marginLeft: "0" 
 		}, "fast");
 	});
-	
-	
-	// Tweet Feed ------------------------------------------------------ //
-	
-    $("#tweets").tweet({
-        count: 3,
-        username: "ansimuz",
-        callback: tweet_cycle
-    });
-	
+
 	// Tweet arrows rollover --------------------------------------------- //
 	
 	$("#twitter #prev-tweet").hover(function() { 
