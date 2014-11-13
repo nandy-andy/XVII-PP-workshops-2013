@@ -10,7 +10,7 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 $blog = new Blog();
 $app->get('/', function() use ($app, $blog) {
 	return $app['twig']->render('blog.html', array(
-		'title' => 'Listing',
+		'title' => 'Performance workshops blog - Listing',
 		'posts' => $blog->getPosts(),
 		'categories' => $blog->getCategories(),
 		'archives' => array(),
@@ -19,7 +19,7 @@ $app->get('/', function() use ($app, $blog) {
 
 $app->get('/post/{id}', function($id) use ($app, $blog) {
 	return $app['twig']->render('single.html', array(
-		'title' => 'A post',
+		'title' => 'Performance workshops blog - A post',
 		'post' => $blog->getPost($id),
 		'categories' => $blog->getCategories(),
 		'archives' => array(),
